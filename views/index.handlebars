@@ -3,7 +3,7 @@
 
         <div class="row">
             <div class="col s12 center-align ">
-                <h3 class=" ">EAT-DA-BURGEEER</h3>
+                <h2 class=" ">EAT-DA-BURGEEER!1!11</h2>
                 <img src="/images/b1.png" alt=" burgerpic">
 
 
@@ -11,13 +11,14 @@
         </div>
         <div class="row">
             <div class="col s6 center-align colNotEaten">
-                <div>
+                <ul>
+                    {{!-- not eaten, where devoured is false  --}}
                     {{#each burgers}}
                     {{#unless devoured}}
                     {{> burgers/burger-block devoure=true}}
                     {{/unless}}
                     {{/each}}
-                </div>
+                </ul>
             </div>
 
 
@@ -37,23 +38,19 @@
 
         <div class="row">
             <div class=" col s12 center-align ">
-
                 <div class="row">
-                    <form class=" create-form">
 
+                    <form class="create-form">
                         <div class="form-group">
                             <label for="bg">What burger would you like to eat?</label>
                             <input type="text" id="bg" name="name">
-                            <a class="waves-effect red accent-4 waves-light btn"><i
+                            <button class="waves-effect red accent-4 waves-light btn "><i
                                     class=" fas fa-hamburger material-icons right"></i>Make
-                                it!</a>
+                                it!</button>
                         </div>
-
                     </form>
 
                 </div>
-
-
 
             </div>
         </div>
