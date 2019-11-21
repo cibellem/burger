@@ -47,11 +47,11 @@ $(function () {
 
 
 
-    $(".delete-cat").on("click", function (event) {
+    $(".delete-burger").on("click", function (event) {
         var id = $(this).data("id");
 
         // Send the DELETE request.
-        $.ajax("/api/cats/" + id, {
+        $.ajax("/api/burgers/" + id, {
             type: "DELETE"
         }).then(
             function () {
