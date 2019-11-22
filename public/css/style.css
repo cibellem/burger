@@ -36,19 +36,24 @@ body{
     overflow: auto; 
  }
 
- 
 
 img {
-    height: 400px;
-    padding: 0;
- 
-    width: 400;
+    height: 200px; 
+    width: 200;
 }
-button {
+
+.burgerList{
+    background-color: wheat;
+    /* opacity: 50%; */
+    border-style: inset;
+}
+.btn {
     font-family: 'Titillium Web', sans-serif;
     font-display: 15px;
-    letter-spacing: 1px;
-    border-radius: 25 !important
+    letter-spacing: 2px;
+    align-content: center;
+    
+    
 }
 
  
