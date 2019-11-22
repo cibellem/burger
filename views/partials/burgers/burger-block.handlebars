@@ -1,11 +1,9 @@
-<li>
+<li class="collection-item">
     {{burger_name}}
 
-    <button class="change-status" data-id="{{id}}" data-newStatus="{{devoure}}">
-        {{#if devoure}}EAT ME!{{else}}DELETE{{/if}}
+    <button class="change-status waves-effect red accent-4 waves-light btn" data-id="{{id}}"
+        data-newStatus="{{devoure}}">
+        {{#if devoure}}DEVOUR ME!{{/if}}
     </button>
-    <button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
-
-
 
 </li>

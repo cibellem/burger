@@ -1,3 +1,6 @@
+const userInput = $("#bg")
+
+
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function () {
     $(".change-status").on("click", function (event) {
@@ -26,6 +29,7 @@ $(function () {
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
 
+
         var newBurger = {
             burger_name: $("#bg").val().trim(),
             devoured: false
@@ -37,12 +41,16 @@ $(function () {
             data: newBurger
         }).then(
             function () {
-                console.log("created new cat");
+                console.log("create new burguer");
                 // Reload the page to get the updated list
                 location.reload();
             }
         );
-    });
+
+
+
+    })
+
 
 
 
@@ -61,4 +69,5 @@ $(function () {
             }
         );
     });
-});
+})
+

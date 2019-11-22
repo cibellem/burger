@@ -1,59 +1,74 @@
 <body>
-    <div class="container">
 
-        <div class="row">
-            <div class="col s12 center-align ">
-                <h2 class=" ">EAT-DA-BURGEEER!1!11</h2>
-                <img src="/images/b1.png" alt=" burgerpic">
+    <header>
+        <h3 class="center-align ">EAT-DA-BURGEEER!!</h3>
+    </header>
 
+    <div id="body" class="container mainDiv">
+        <div class="container">
 
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s6 center-align colNotEaten">
-                <ul>
-                    {{!-- not eaten, where devoured is false  --}}
-                    {{#each burgers}}
-                    {{#unless devoured}}
-                    {{> burgers/burger-block devoure=true}}
-                    {{/unless}}
-                    {{/each}}
-                </ul>
-            </div>
+            <div class="row">
+                <div class="col s12  center-align imgDiv">
 
 
+                    <img src="/images/b1.png" alt=" burgerpic">
 
-            <div class="col s6 center-align colEaten ">
-                <ul>
-                    {{#each burgers}}
-                    {{#if devoured}}
-                    {{> burgers/burger-block devoure=false}}
-                    {{/if}}
-                    {{/each}}
-                </ul>
-            </div>
-        </div>
-
-
-
-        <div class="row">
-            <div class=" col s12 center-align ">
-                <div class="row">
-
-                    <form class="create-form">
-                        <div class="form-group">
-                            <label for="bg">What burger would you like to eat?</label>
-                            <input type="text" id="bg" name="name">
-                            <button class="waves-effect red accent-4 waves-light btn "><i
-                                    class=" fas fa-hamburger material-icons right"></i>Make
-                                it!</button>
-                        </div>
-                    </form>
 
                 </div>
 
             </div>
-        </div>
+            <div class="row">
+                <div class="col s6 m6 center-align colNotEaten">
 
+                    <h5>TO EAT</h5>
+                    <ul class="collection-item">
+                        {{!-- not eaten, where devoured is false  --}}
+                        {{#each burgers}}
+                        {{#unless devoured}}
+                        {{> burgers/burger-block devoure=true}}
+                        {{/unless}}
+                        {{/each}}
+                    </ul>
+                </div>
+
+                <div class="col s6 m6 center-align colEaten ">
+                    <h5>EATEN</h5>
+                    <ul>
+
+                        {{#each burgers}}
+                        {{#if devoured}}
+                        {{> burgers/devoured-block devoure=true}}
+
+                        {{/if}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="row">
+                <div class=" col s12 ">
+                    <div class="row center-align ">
+
+                        <form class="create-form  center-align ">
+                            <div class="form-group input-field  center-align  ">
+                                <label for="bg">What burger would you like to eat?</label>
+                                <input type="text" id="bg" name="name">
+                                <button class="waves-effect red accent-4 waves-light btn "><i
+                                        class=" fas fa-hamburger material-icons right"></i>Make
+                                    it!</button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
+
+
 </body>
