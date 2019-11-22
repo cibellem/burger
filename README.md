@@ -20,5 +20,10 @@ Materialize <br>
 ### Link
 Check it out! 
 
+![demogif](public/images/bg.gif) <br>
+
+Link to a complete demo video 
+[https://polar-hamlet-23486.herokuapp.com/]
+
 
 
