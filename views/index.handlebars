@@ -40,7 +40,12 @@
 
                         {{#each burgers}}
                         {{#if devoured}}
-                        {{> burgers/devoured-block devoure=true}}
+                        <li>
+                            {{burger_name}}
+
+                            <button class=" delete-burger  waves-effect red accent-4 waves-light btn"
+                                data-id="{{this.id}}">Delete</button>
+                        </li>
 
                         {{/if}}
                         {{/each}}
