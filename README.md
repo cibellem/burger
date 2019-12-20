@@ -4,7 +4,7 @@
 
 ### Description
 
-This application it's a Burger logger built with h MySQL, Node, Express, Handlebars and ORM. <br>  I used Node and MySQL to query and route data and Handlebars to generate HTML.
+This application it's a Burger logger built with MySQL, Node, Express and Handlebars. <br>  I used Node and MySQL to query and route data and Handlebars to generate HTML.
 
 
 *Key words* : 
